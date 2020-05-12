@@ -14,7 +14,7 @@ public class BulkReader {
                 if (line.endsWith("md5"))
                     continue;
 
-                T dataSet = XmlGzParser.parse("/media/danial/mamanpaz/pubmed/" + line, clazz);
+                T dataSet = XmlGzParser.parse("/media/pubmed/" + line, clazz);
                 // process the line
 
                 action.accept(dataSet);
